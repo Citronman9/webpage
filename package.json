@@ -11,15 +11,8 @@
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-<<<<<<< HEAD
     "@mui/material": "^6.0.2",
     "next": "^14.2.15",
-=======
-    "@fontsource/roboto": "^5.1.0",
-    "@mui/icons-material": "^6.1.5",
-    "@mui/material": "^6.1.5",
-    "next": "14.2.11",
->>>>>>> 2b155c5afbcee29583ea69f63999447c09a3d081
     "next-auth": "^4.24.10",
     "react": "^18",
     "react-dom": "^18"

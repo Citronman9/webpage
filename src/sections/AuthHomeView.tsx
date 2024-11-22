@@ -24,7 +24,3 @@ export default function AuthHomeView({ session }: { session: Session }) {
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2b155c5afbcee29583ea69f63999447c09a3d081
