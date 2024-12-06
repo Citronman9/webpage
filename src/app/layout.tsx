@@ -2,7 +2,7 @@
 
 import { Metadata } from "next";
 import "./globals.css";
-import BasicMenu from "../components/menu"; // Replace NavBar import with BasicMenu
+import Navbar from "../components/NavBot";
 import AuthProvider from "../components/AuthProvider";
 
 export const metadata: Metadata = {
@@ -20,13 +20,11 @@ export default function RootLayout({
       <body>
         <AuthProvider>
           <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-            {/* Render the BasicMenu component at the top */}
-             
             <main style={{ flexGrow: 1 }}>
               {children}
             </main>
-            <BasicMenu />
           </div>
+          <Navbar /> 
         </AuthProvider>
       </body>
     </html>
