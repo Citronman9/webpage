@@ -2,6 +2,7 @@
 
 import { Metadata } from "next";
 import "./globals.css";
+import NavBar from "../components/NavBot"
 import AuthProvider from "../components/AuthProvider";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
               {children}
             </main>
           </div>
+          <NavBar />
         </AuthProvider>
       </body>
     </html>
