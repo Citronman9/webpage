@@ -4,9 +4,6 @@ import { signOut } from "next-auth/react";
 import Button from "@mui/material/Button";
 
 
-import { signOut } from "next-auth/react";
-import Button from "@mui/material/Button";
-
 export default function Odhlasenie() {
   return (
     <div>

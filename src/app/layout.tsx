@@ -2,7 +2,6 @@
 
 import { Metadata } from "next";
 import "./globals.css";
-import BasicMenu from "../components/menu"; // Replace NavBar import with BasicMenu
 import AuthProvider from "../components/AuthProvider";
 
 export const metadata: Metadata = {
@@ -25,7 +24,6 @@ export default function RootLayout({
             <main style={{ flexGrow: 1 }}>
               {children}
             </main>
-            <BasicMenu />
           </div>
         </AuthProvider>
       </body>
