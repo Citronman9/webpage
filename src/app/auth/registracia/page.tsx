@@ -1,13 +1,14 @@
 // src/app/auth/registracia/page.tsx
 
-import Typography from '@mui/material/Typography';
 
-export const metadata = { title: " Registrácia | ZoškaSnap" };
+import Link from 'next/link';
 
-export default function SignUp() {
-
+export default function RegisterPage() {
   return (
-
-      <Typography> Registrácia </Typography>
+    <div style={{ padding: '50px', textAlign: 'center' }}>
+      <h2>Register</h2>
+      <p>To register, sign in with Google:</p>
+      <Link href="/auth/prihlasenie">Go to Login</Link>
+    </div>
   );
 }

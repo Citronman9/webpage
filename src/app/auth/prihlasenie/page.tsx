@@ -1,13 +1,20 @@
 // src/app/auth/prihlasenie/page.tsx
 
-import Typography from '@mui/material/Typography';
+'use client';
+import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
-export const metadata = { title: " Prihlásenie | ZoškaSnap" };
+export default function LoginPage() {
+  const router = useRouter();
 
-export default function SignIn() {
+  const handleGoogleSignIn = async () => {
+    await signIn('google', { callbackUrl: '/' });
+  };
 
   return (
-
-      <Typography> Prihlásenie </Typography>
+    <div style={{ padding: '50px', textAlign: 'center' }}>
+      <h2>Login</h2>
+      <button onClick={handleGoogleSignIn}>Sign in with Google</button>
+    </div>
   );
 }
