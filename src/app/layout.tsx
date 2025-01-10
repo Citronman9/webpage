@@ -1,5 +1,7 @@
 // src/app/layout.tsx
 
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Metadata } from "next";
 import "./globals.css";
 import NavBar from "../components/NavBot"
@@ -27,6 +29,8 @@ export default function RootLayout({
             </main>
           </div>
           <NavBar />
+          <Analytics />
+          <SpeedInsights />
         </AuthProvider>
       </body>
     </html>
